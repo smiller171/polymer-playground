@@ -103,9 +103,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         </paper-toolbar>
 
         <!-- Main Content -->
-          <iron-pages attr-for-selected="data-route" selected="{{route}}">
+          <neon-animated-pages class="flex" attr-for-selected="data-route" selected="{{route}}" entry-animation="slide-from-right-animation" exit-animation="slide-left-animation">
 
-            <section data-route="home">
+            <neon-animatable data-route="home">
+            <p>This is a test</p>
               <paper-material elevation="1">
                 <my-greeting></my-greeting>
 
@@ -115,33 +116,33 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                 <p class="paper-font-body2">Looking for more Web App layouts? Check out our <a href="https://github.com/PolymerElements/app-layout-templates">layouts</a> collection. You can also <a href="http://polymerelements.github.io/app-layout-templates/">preview</a> them live.</p>
               </paper-material>
               <paper-material elevation="1">
-              This is a new card
+              This is a new card!!!!!!!!!
               </paper-material>
-            </section>
+            </neon-animatable>
 
-            <section data-route="users">
+            <neon-animatable data-route="users">
               <paper-material elevation="1">
                 <h2 class="paper-font-display2">Users</h2>
                 <p>This is the users section</p>
                 <a href="/users/Rob">Rob</a></p>
               </paper-material>
-            </section>
+            </neon-animatable>
 
-            <section data-route="user-info">
+            <neon-animatable data-route="user-info">
               <paper-material elevation="1">
                 <h2 class="paper-font-display2">
                 User:<span>{{params.name}}</span>
                 </h2>
                 <div>This is <span>{{params.name}}</span>'s section</div>
               </paper-material>
-            </section>
+            </neon-animatable>
 
-            <section data-route="contact">
+            <neon-animatable data-route="contact">
               <paper-material elevation="1">
                 <h2 class="paper-font-display2">Contact</h2>
                 <p>This is the contact section</p>
               </paper-material>
-            </section>
+            </neon-animatable>
 
           </iron-pages>
           </paper-header-panel>
