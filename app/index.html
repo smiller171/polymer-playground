@@ -73,9 +73,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                 <span>Home</span>
               </a>
 
-              <a data-route="users" href="#!/users" paper-drawer-toggle>
-                <iron-icon icon="info"></iron-icon>
-                <span>Users</span>
+              <a data-route="resume" href="#!/resume" paper-drawer-toggle>
+                <iron-icon icon="assignment"></iron-icon>
+                <span>Resume</span>
               </a>
 
               <a data-route="contact" href="#!/contact" paper-drawer-toggle>
@@ -108,22 +108,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             <neon-animatable data-route="home">
               <paper-material elevation="1">
                 <my-greeting></my-greeting>
-
-                <p class="paper-font-subhead">You now have:</p>
-                <my-list></my-list>
-
-                <p class="paper-font-body2">Looking for more Web App layouts? Check out our <a href="https://github.com/PolymerElements/app-layout-templates">layouts</a> collection. You can also <a href="http://polymerelements.github.io/app-layout-templates/">preview</a> them live.</p>
               </paper-material>
-              <paper-material elevation="1">
-              This is a new card!!!!!!!!!
-              </paper-material>
+
             </neon-animatable>
 
-            <neon-animatable data-route="users">
+            <neon-animatable data-route="resume">
               <paper-material elevation="1">
-                <h2 class="paper-font-display2">Users</h2>
-                <p>This is the users section</p>
-                <a href="/users/Rob">Rob</a></p>
+                <h2 class="paper-font-display2">Resume</h2>
+                <p>This is the resume section</p>
               </paper-material>
             </neon-animatable>
 
@@ -138,8 +130,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
             <neon-animatable data-route="contact">
               <paper-material elevation="1">
-                <h2 class="paper-font-display2">Contact</h2>
-                <p>This is the contact section</p>
+                <h2 class="paper-font-display1">Contact Info</h2>
+                <paper-item><b>E-mail:</b>&nbspscott.miller171@gmail.com</paper-item>
+                <paper-item><b>Google+:</b>&nbsp+ScottMiller171</paper-item>
+                <paper-item><b>Hangouts:</b>&nbspscott.miller171@gmail.com</paper-item>
+                <paper-item><b>Phone:</b>&nbsp(512)814-8521</paper-item>
               </paper-material>
             </neon-animatable>
 
