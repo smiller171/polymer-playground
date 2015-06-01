@@ -103,10 +103,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         </paper-toolbar>
 
         <!-- Main Content -->
-          <neon-animated-pages class="flex" attr-for-selected="data-route" selected="{{route}}" entry-animation="slide-from-right-animation" exit-animation="slide-left-animation">
+          <neon-animated-pages attr-for-selected="data-route" selected="{{route}}" entry-animation="slide-from-right-animation" exit-animation="slide-left-animation">
 
             <neon-animatable data-route="home">
-            <p>This is a test</p>
               <paper-material elevation="1">
                 <my-greeting></my-greeting>
 
@@ -144,8 +143,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
               </paper-material>
             </neon-animatable>
 
-          </iron-pages>
-          </paper-header-panel>
+          </neon-animated-pages>
+      </paper-header-panel>
     </paper-drawer-panel>
 
     <paper-toast id="caching-complete"
