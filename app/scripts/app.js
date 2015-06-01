@@ -30,7 +30,6 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     document.querySelector('body').removeAttribute('unresolved');
 
     // Ensure the drawer is hidden on desktop/tablet
-    var drawerPanel = document.querySelector('#paperDrawerPanel');
   });
 
 })(document);
