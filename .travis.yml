@@ -1,6 +1,18 @@
 language: node_js
 node_js:
-  - "stable"
+- stable
 before_script:
-  - npm install gulp
+- npm install -g gulp
 script: gulp
+deploy:
+  provider: s3
+  access_key_id: AKIAIHTYM3DF2MYIXKVQ
+  secret_access_key:
+    secure: lxdhclZ0Kl3c7PdQdhQfYM5RxwRke21g/+oAYdEqdQJXceKdud5ZM8mOSQhYcNu3wnv/9ZPzQOTswqIk7KyKRjwIHv3nQvcOV2SPW2dtl4NCWBhnBgXLkl5ScEwYlPqfZ3FUqmlyo0i50n5TlEuKf3l/KPKoN1MdWcSsmYs4x90Gy4SrZjFr3RkBwdPJm82ly3AOEAtpGkRwJpAIW9iJmk93BCrLswdQK8HSVHyOAWwkEf0A3ea6bxg6YbQr/4PXCRIE89TYiPSi05iQqxW+9HT1SqkJiAPTG35517lpzhiCThd6VPGIHMlEmq+z1P36HIrrhm6FQEysoKEudM7pmBsoldAEF1bApZdmDC0cXeZvRjKMWGh+EzfqlU6Gq/zcqNOxgJiHl8jz+ySJTTISQeUIILL1aiqaFCkrIQz++fW2DFMkNQHMIazLISy8Q6CepcmEw+LSsD2Bwxeh44jCRFKitWGGcnPsj51Ea0ddA1PWISxdvMAmyW+xC10JVYrG5m7MGB6nLkQ6euoEFAP6DI8GoSC8eKH/NKFW2i/4f3ttYwsPuocUZ1owgpXp68dGh7c8bF5FzzAMuyBFT3v6ICv/ZuoCzw3Bmn2iAzdP63/HUXZIDuVippxWw0rlfsDqp1AsCo30+WMOqyfC/o1hrs41xDtbQE28g8KTYuOHD0o=
+  bucket: www.scottdev.me
+  skip_cleanup: true
+  local_dir: dist
+  endpoint: www.scottdev.me.s3-website-us-east-1.amazonaws.com
+  region: "us-east-1"
+  on:
+    branch: master
