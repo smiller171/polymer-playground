@@ -4,8 +4,3 @@ node_js:
 before_script:
   - npm install gulp
 script: gulp
-cache:
-  directories:
-    - node_modules
-before_cache:
-  - rm -f node_modules/web-component-tester/package.json
